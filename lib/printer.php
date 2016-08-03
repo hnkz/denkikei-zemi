@@ -351,7 +351,7 @@ You should have received a copy of the GNU General Public License along with thi
 	}	
 	
 	// print the scanresult
-	function printoutput($output, $treestyle=1)
+	function printoutput($output, $treestyle=1, $hyouka)
 	{
 		if(!empty($output))
 		{
@@ -362,8 +362,8 @@ You should have received a copy of the GNU General Public License along with thi
 				if(key($output) != "" && !empty($output[key($output)]) && fileHasVulns($output[key($output)]))
 				{		
 					echo '<div class="filebox">',
-					'<span class="filename">File: ',key($output),'</span><br>',
-					'<div id="',key($output),'"><br>';
+					'<span class="filename">File: ',key($output),'</span>',
+					'<div id="',key($output),'"><div class="tensuu" style = "color: red; font-size: 10px;"><h3>'$hyouka'</h3></div><br>';
 	
 					foreach($output[key($output)] as $vulnBlock)
 					{	

@@ -7,7 +7,6 @@ RIPS - A static source code analyser for vulnerabilities in PHP scripts
 **/
 
 /* SCAN */
-
 function scanAnimation(height, idprefix)
 {
 	var div = document.getElementById(idprefix+'ned');

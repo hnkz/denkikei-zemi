@@ -49,6 +49,10 @@ div.codebox {
 div.vulnblock span {
 	color: black;
 }
+div.tensuu {
+  color: red;
+  font-size: 14px;
+}
 div.vulnblock span.phps-t-constant-encapsed-string,
 div.vulnblock span.phps-t-encapsed-and-whitespace,
 div.vulnblock span.phps-t-comment,

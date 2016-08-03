@@ -43,6 +43,7 @@ You should have received a copy of the GNU General Public License along with thi
 	if(!empty($_POST['loc']))
 	{		
 		$location = realpath($_POST['loc']);
+    $hyouka = shell_exec('echo mama');
 		
 		if(is_dir($location))
 		{
@@ -406,5 +407,5 @@ You should have received a copy of the GNU General Public License along with thi
 
 <?php 
 	// scan result
-	@printoutput($output, $_POST['treestyle']); 
+	@printoutput($output, $_POST['treestyle'],$hyouka); 
 ?>
