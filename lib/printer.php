@@ -363,7 +363,7 @@ You should have received a copy of the GNU General Public License along with thi
 				{		
 					echo '<div class="filebox">',
 					'<span class="filename">File: ',key($output),'</span>',
-					'<div id="',key($output),'"><div class="tensuu" style = "color: red; font-size: 10px;"><h3>'$hyouka'</h3></div><br>';
+					'<div id="',key($output),'"><div class="tensuu" style = "color: red; font-size: 10px;"><h3>',$hyouka,'</h3></div><br>';
 	
 					foreach($output[key($output)] as $vulnBlock)
 					{	
