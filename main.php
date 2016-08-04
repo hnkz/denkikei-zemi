@@ -43,7 +43,8 @@ You should have received a copy of the GNU General Public License along with thi
 	if(!empty($_POST['loc']))
 	{		
 		$location = realpath($_POST['loc']);
-    $hyouka = shell_exec('echo mama');
+    $hyouka = shell_exec('PATH=$PATH:/home/yamaguchi/matu ruby ~/matu/nagetsukeru.rb '.$location);
+    //$hyouka = shell_exec('whoami');
 		
 		if(is_dir($location))
 		{
